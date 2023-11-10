@@ -1,0 +1,32 @@
+<h1>Seja bem vindo ao curso de Angular!</h1>
+<h4 class="text-danger">{{ anuncio }}</h4>
+
+<div class="row">
+  <div class="col">
+
+    <app-card-produto
+    [foto]="foto"
+    [nomeProduto]="nomeProduto"
+    [idProduto]="idProduto"
+    [promocao]="promocao"
+    [dataValidade]="dataValidade"
+    [precoProduto]="precoProduto">
+  </app-card-produto>
+
+  </div>
+  <div class="col">
+    <app-card-produto
+  foto="https://www.queroviajarmais.com/wp-content/uploads/2021/03/tunel-do-amor-em-kleven-1.jpg"
+  nomeProduto="Lugar distante"
+  [idProduto]="15"
+  [promocao]="false"
+  dataValidade="2021-12-31"
+  [precoProduto]="5434.00"
+  >
+
+</app-card-produto>
+
+  </div>
+</div>
+
+
