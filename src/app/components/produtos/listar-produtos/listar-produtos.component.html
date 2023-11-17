@@ -18,7 +18,7 @@
       <tr *ngFor= "let prod of listaProdutos">
         <td>{{prod.id}}</td>
         <td>{{prod.nome}}</td>
-        <td>{{prod.Validade | date: "shortDate"}}</td>
+        <td>{{prod.validade | date: "shortDate"}}</td>
         <td>{{prod.precoProduto | currency: "BRL"}}</td>
         <td>
           <button class="btn btn-warning">

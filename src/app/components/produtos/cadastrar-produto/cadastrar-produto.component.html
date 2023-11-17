@@ -8,7 +8,9 @@
           <label for="nome">Nome do Produto: </label>
           <input type="text"
            class="form-control"
-           placeholder="Digital o nome do Produto">
+           placeholder="Digital o nome do Produto"
+           name="nomeProduto"
+           [(ngModel)]="produto.nome">
         </div>
       </div>
     </div><!--Fim Row-->
@@ -17,7 +19,10 @@
         <div class="form-group">
           <label for="Validade">Validade do Produto: </label>
           <input type="date"
-           class="form-control">
+           class="form-control"
+           name="validade"
+           [(ngModel)]="produto.validade">
+
         </div>
       </div>
     </div><!--Fim Row-->
@@ -26,7 +31,9 @@
         <label for="precoProduto">Preço do Produto: </label>
         <input type="number"
          class="form-control"
-         placeholder="0.00">
+         placeholder="0.00"
+         name="preco"
+         [(ngModel)]="produto.precoProduto">
       </div>
     </div><!--Fim do Col-->
     <div class="row">
@@ -34,7 +41,7 @@
       <button class="btn btn-default" routerLink="/produtos">
         Voltar
       </button>
-      <button class="btn btn-success float-right">
+      <button class="btn btn-success float-right" routerLink="/produtos">
         Salvar
       </button>
       </div>
